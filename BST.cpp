@@ -1,3 +1,4 @@
+// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 
@@ -31,16 +32,6 @@ struct node *insertNode(struct node *root, int key) {
     root->left = insertNode(root->left, key);
   }
   return root;
-}
-
-
-// Find the minimum value node
-struct node *minValueNode(struct node *node) {
-  struct node *current = node;
-  while (current->left != NULL) {
-    current = current->left;
-  }
-  return current;
 }
 
 // Deleting a node
